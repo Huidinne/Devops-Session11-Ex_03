@@ -31,8 +31,7 @@
   - Bước `./gradlew test`: Phải download toàn bộ dependencies từ Maven Central/Gradle Plugin Portal.
   - Bước `Post Setup Java`: Thực hiện nén và lưu cache lên kho lưu trữ của GitHub Actions (`Cache saved successfully`).
 - *Ảnh chụp màn hình lần 1*:
-  <!-- Chèn ảnh chụp màn hình run 1 tại đây -->
-  <!-- ![Lần 1](screenshot_run1.png) -->
+  ![alt text](image.png)
 
 ### 4.2. Lần chạy thứ 2 (Lần push tiếp theo - Khôi phục cache)
 - **Hiện tượng**:
