@@ -1,0 +1,28 @@
+name: Java CI with Gradle
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout mã nguồn
+        uses: actions/checkout@v4
+
+      - name: Thiết lập môi trường Java JDK 17
+        uses: actions/setup-java@v5
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'gradle' # Bật tính năng lưu và khôi phục Dependency Cache của Gradle
+
+      - name: Cấp quyền thực thi cho Gradle Wrapper
+        run: chmod +x gradlew
+
+      - name: Chạy kiểm thử tự động với Gradle
+        run: ./gradlew test
