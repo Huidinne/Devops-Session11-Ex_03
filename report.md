@@ -1,10 +1,5 @@
 # Báo Cáo: Tối Ưu Tốc Độ CI Bằng Gradle Dependency Caching (Bài 3)
 
-## 1. Thông Tin Chung
-- **Học viên**: [Họ và tên của bạn]
-- **Bài tập**: Bài 3 - Session 11: Tối ưu tốc độ CI bằng Gradle Dependency Caching
-- **Repository**: [Đường link repository GitHub của bạn]
-
 ---
 
 ## 2. Mục Tiêu & Cơ Chế Thực Hiện
@@ -15,11 +10,11 @@
 
 ## 3. Bảng So Sánh Thời Gian Thực Thi
 
-| Tiêu chí | Lần chạy 1 (Chưa có Cache / Cache Miss) | Lần chạy 2 (Đã có Cache / Cache Hit) | Độ chênh lệch / Cải thiện |
-| :--- | :---: | :---: | :---: |
-| **Bước `actions/setup-java`** | ~...s (Chưa tìm thấy cache) | ~...s (Đã khôi phục cache) | ... |
-| **Bước `./gradlew test`** | ~...s (Tải dependencies từ Internet) | ~...s (Lấy trực tiếp từ cache) | Giảm ~...% |
-| **Tổng thời gian Job** | ~...s | ~...s | Nhanh hơn ~...s |
+| Tiêu chí                      | Lần chạy 1 (Chưa có Cache / Cache Miss) | Lần chạy 2 (Đã có Cache / Cache Hit) | Độ chênh lệch / Cải thiện |
+|:------------------------------|:---------------------------------------:|:------------------------------------:|:-------------------------:|
+| **Bước `actions/setup-java`** |       ~...s (Chưa tìm thấy cache)       |      ~...s (Đã khôi phục cache)      |            ...            |
+| **Bước `./gradlew test`**     |  ~...s (Tải dependencies từ Internet)   |    ~...s (Lấy trực tiếp từ cache)    |        Giảm ~...%         |
+| **Tổng thời gian Job**        |                  ~...s                  |                ~...s                 |      Nhanh hơn ~...s      |
 
 ---
 
