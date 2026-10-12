@@ -42,9 +42,9 @@
     ```
   - Bước `./gradlew test`: Gradle bỏ qua bước download thư viện và đi thẳng vào biên dịch/chạy test, giúp tốc độ tăng rõ rệt.
 - *Ảnh chụp màn hình lần 2*:
-  <!-- Chèn ảnh chụp màn hình run 2 tại đây -->
-  <!-- ![Lần 2](screenshot_run2.png) -->
+![alt text](image-1.png)
 
+![alt text](image-2.png)
 ---
 
 ## 5. Kết Luận
